@@ -1,0 +1,54 @@
+.carousel-title {
+  background: rgba(60, 65, 65, 0.8);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.carousel-button {
+  background-image: linear-gradient(to bottom, #ed3d6f, #bf1f7c);
+  border: none;
+  height: 50px;
+  width: 175px;
+  color: white;
+}
+
+.carousel-button:hover {
+  background-image: linear-gradient(to bottom, #bf1f7c, #ed3d6f);
+}
+
+#carouselExampleSlidesOnly {
+  padding-top: 50px;
+}
+
+.carousel-caption {
+  padding-bottom: 50px;
+}
+
+.col-md-4 {
+  text-align: center;
+  color: #ed3d6f;
+  padding-top: 30px;
+}
+
+.col-md-4 h3:hover {
+  color: #bf1f7c;
+}
+
+.fa-div {
+  height: 70px;
+  width: 70px;
+  background-image: linear-gradient(to bottom, #ed3d6f, #bf1f7c);
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 40px;
+  padding-top: 3px;
+}
+
+.fa-div:hover {
+  font-size: 100px;
+  background-image: linear-gradient(to bottom, #bf1f7c, #ed3d6f);
+  font-size: 40px;
+
+}
