@@ -23,6 +23,14 @@
   background-image: linear-gradient(to bottom, #bf1f7c, #ed3d6f);
 }
 
+.button-link:hover {
+  text-decoration: none;
+}
+
+button:active, button:focus {
+  outline: none !important;
+}
+
 #carouselExampleSlidesOnly {
   padding-top: 50px;
 }
