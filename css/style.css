@@ -50,5 +50,26 @@
   font-size: 100px;
   background-image: linear-gradient(to bottom, #bf1f7c, #ed3d6f);
   font-size: 40px;
+}
 
+.flex-container {
+  flex-direction: row;
+  display: inline-flex;
+  padding-top: 100px;
+  justify-content: center;
+}
+
+.card-container {
+  flex-wrap: wrap;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.order-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 10px;
 }
