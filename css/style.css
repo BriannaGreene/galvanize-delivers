@@ -1,7 +1,12 @@
 .carousel-title {
   background: rgba(60, 65, 65, 0.8);
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 20px;
+  display: inline-block;
+}
+
+.hero-button-div {
+  display: block;
 }
 
 .carousel-button {
@@ -10,6 +15,8 @@
   height: 50px;
   width: 175px;
   color: white;
+  display: block;
+  margin: auto;
 }
 
 .carousel-button:hover {
@@ -21,7 +28,7 @@
 }
 
 .carousel-caption {
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .col-md-4 {
@@ -54,7 +61,7 @@
 
 .flex-container {
   flex-direction: row;
-  display: inline-flex;
+  display: flex;
   padding-top: 100px;
   justify-content: center;
 }
@@ -63,11 +70,13 @@
   flex-wrap: wrap;
   display: inline-flex;
   justify-content: center;
+  max-width: 600px;
 }
 
 .order-container {
   display: inline-flex;
   flex-wrap: wrap;
+  padding-left: 50px;
 }
 
 .card {
