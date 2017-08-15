@@ -13,13 +13,18 @@
 
 <body id="bootstrap-overrides">
 
+  <!-- Call out current page? use jquery?
+      get carousel to work with js
+      more things?
+    -->
+
   <header>
     <nav class="navbar fixed-top navbar-dark bg-dark">
       <a class="navbar-brand" href="index.html"><h1>G Deliveries</h1></a>
       <div class="navbar-nav" id="navbarText">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="order.html">Order Delivery<span class="sr-only">(current)</span></a>
+            <a class="nav-link nav-current-page" href="order.html">Order Delivery<span class="sr-only">(current)</span></a>
           </li>
         </ul>
       </div>
@@ -76,14 +81,30 @@
 
   </div>
 
-
-
-
-
-
-  <footer class="container">
-
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a class="footer-homelink" href="index.html"><h2>G Deliveries</h2></a>
+        <p>Fresh &amp; Hot Delivery</p>
+      </div>
+      <div class="footer-right">
+        <ul class="footer-ul">
+          <li class="">
+            <a class="footer-link" href="idex.html">Home</a>
+          </li>
+          <li class="">
+            <a class="footer-link" href="order.html">Order Delivery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
+
+  <div class="subfooter">
+    <div class="container copy-text">
+      <small class="">&copy 2017 G Deliveries</small>
+    </div>
+  </div>
 
 
 

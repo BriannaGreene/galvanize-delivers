@@ -110,9 +110,7 @@ button:active, button:focus {
 }
 
 .footer-right {
-  /*justify-content: flex-end;
-  align-self: flex-end;
-  color: #fff;*/
+  padding-top: 10px;
 }
 
 .footer-homelink {
@@ -147,4 +145,14 @@ button:active, button:focus {
 .copy-text {
   color: #c2c2c2;
   padding-top: 10px;
+}
+
+.btn-primary {
+  background-image: linear-gradient(to bottom, #ed3d6f, #bf1f7c);
+  border-color: #bf1f7c;
+}
+
+.btn-primary:hover {
+  background-image: linear-gradient(to bottom, #bf1f7c, #ed3d6f);
+  border-color: #bf1f7c;
 }
