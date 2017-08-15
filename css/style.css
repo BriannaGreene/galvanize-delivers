@@ -82,3 +82,61 @@
 .card {
   margin: 10px;
 }
+
+.footer {
+  height: 150px;
+  background-color: #ed3d6f;
+  width: 100%;
+  margin-top: 75px;
+  padding-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.footer-left {
+  flex-grow: 1;
+}
+
+.footer-right {
+  /*justify-content: flex-end;
+  align-self: flex-end;
+  color: #fff;*/
+}
+
+.footer-homelink {
+  color: #fff;
+}
+
+.footer-homelink:hover {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+.footer-ul {
+  list-style: none;
+  text-align: right;
+}
+
+.footer-link {
+  color: #fff;
+}
+
+.footer-link:hover {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+.subfooter {
+  height: 50px;
+  background-color: #bf1f7c;
+  width: 100%;
+}
+
+.copy-text {
+  color: #c2c2c2;
+  padding-top: 10px;
+}
