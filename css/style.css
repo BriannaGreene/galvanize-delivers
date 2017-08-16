@@ -70,7 +70,6 @@ button:active, button:focus {
 .flex-container {
   flex-direction: row;
   display: flex;
-  padding-top: 100px;
   justify-content: center;
 }
 
@@ -81,10 +80,46 @@ button:active, button:focus {
   max-width: 600px;
 }
 
+.order-header-container {
+  padding: 100px 60px 10px 60px;
+}
+
+.menu-title {
+  width: 65%;
+  display: inline-flex;
+  text-align: center;
+}
+
+.order-title {
+  width: 30%;
+  display: inline-flex;
+}
+
 .order-container {
   display: inline-flex;
   flex-wrap: wrap;
   padding-left: 50px;
+}
+
+.orderbox-left {
+  width: 60%;
+  display: inline-flex;
+}
+
+.orderbox-right {
+  width: 35%;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.order-price :not(.subtotal) {
+  border: none;
+}
+
+.orderbox-price {
+  width: 60%;
+  display: inline-flex;
+  padding-left: 100px;
 }
 
 .card {
