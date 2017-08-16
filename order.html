@@ -8,12 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <script type="text/javascript" src="bootstrap.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
 
 
 </head>
 
-<body id="bootstrap-overrides">
+<body>
 
   <!-- Call out current page? use jquery?
       get carousel to work with js
@@ -57,24 +57,24 @@
       <div class="card" style="width: 15rem;">
         <img class="card-img-top" src="/img/pizza.jpg" alt="Card image cap">
         <div class="card-body">
-          <h4 class="card-title">Smoked Ribs</h4>
-          <p class="card-text">$14.99</p>
+          <h4 class="card-title">Arugula Pizza</h4>
+          <p class="card-text">$11.99</p>
           <a href="#" class="btn btn-primary">ADD TO ORDER</a>
         </div>
       </div>
       <div class="card" style="width: 15rem;">
         <img class="card-img-top" src="/img/burger.jpg" alt="Card image cap">
         <div class="card-body">
-          <h4 class="card-title">Smoked Ribs</h4>
-          <p class="card-text">$14.99</p>
+          <h4 class="card-title">Royal with Cheese</h4>
+          <p class="card-text">$8.99</p>
           <a href="#" class="btn btn-primary">ADD TO ORDER</a>
         </div>
       </div>
       <div class="card" style="width: 15rem;">
         <img class="card-img-top" src="/img/ice_cream.jpg" alt="Card image cap">
         <div class="card-body">
-          <h4 class="card-title">Smoked Ribs</h4>
-          <p class="card-text">$14.99</p>
+          <h4 class="card-title">Ice Cream Biscuit</h4>
+          <p class="card-text">$7.99</p>
           <a href="#" class="btn btn-primary">ADD TO ORDER</a>
         </div>
       </div>
@@ -84,8 +84,8 @@
       <div class="card" style="width: 20rem;">
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
-            <span class="orderbox-left"><strong>Item</strong></span>
-            <span class="orderbox-right"><strong>Price</strong></span>
+            <span class="orderbox-left-strong"><strong>Item</strong></span>
+            <span class="orderbox-right-strong"><strong>Price</strong></span>
           </li>
           <li class="list-group-item">
             <span class="orderbox-left">Royal with Cheese</span>
@@ -141,6 +141,10 @@
     </div>
   </div>
 
+  <script type="text/javascript">
+  buttonClickAdd();
+  total();
+  </script>
 
 </body>
 
