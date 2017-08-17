@@ -112,6 +112,20 @@ button:active, button:focus {
   justify-content: flex-end;
 }
 
+.price-list {
+  list-style: none;
+}
+
+.subtotal-price {
+  width: 35%;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.subtotal-style {
+  padding: 17px;
+}
+
 .order-price :not(.subtotal) {
   border: none;
 }
