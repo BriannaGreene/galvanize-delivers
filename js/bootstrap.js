@@ -1,4 +1,3 @@
-console.log("bootstrap.js linked")
 //  GET ORDER FUNCTION WORKING
 // PART 1
 // on click grab card title and grab card price
@@ -37,9 +36,6 @@ function buttonClickAdd() {
 // automatically add up all prices to equal subtotal
 // apply tax and add up total
 
-
-
-
 function total() {
   let cardContainer = document.querySelector('.card-container')
   cardContainer.addEventListener('click', function() {
@@ -56,46 +52,17 @@ function total() {
       subtotalDisplay = `$${sum.toFixed(2)}`
     }
 
-    let leftSpan = document.createElement('span')
-    leftSpan.className = 'orderbox-price'
-    leftSpan.innerText = 'Subtotal'
+    let subtotalText = document.querySelector('.subtotal-price')
+    subtotalText.innerText = subtotalDisplay
 
-    let rightSpan = document.createElement('span')
-    rightSpan.className = 'subtotal-price'
-    rightSpan.innerHTML = subtotalDisplay
+    let findText = document.querySelector('.subtotal-price').innerText
+    let taxText = Number(findText.replace(/\$/gi, '')) * 0.09
+    document.querySelector('.tax-price').innerText = `$${taxText.toFixed(2)}`
 
-    let li = document.createElement('li')
-    li.className = 'subtotal-style'
-    li.appendChild(leftSpan)
-    li.appendChild(rightSpan)
-
-    let ulPrice = document.querySelector('.price-list')
-    ulPrice.removeChild(ulPrice.firstChild)
-    ulPrice.appendChild(li)
-
-
+    let total = Number(subtotalDisplay.replace(/\$/gi, '')) + taxText
+    let totalText = document.querySelector('.price').innerText = `$${total.toFixed(2)}`
   })
 }
-
-// let tax = subtotalDisplay * 0.09
-// let leftSpanTax = document.createElement('span')
-// leftSpanTax.className = 'orderbox-price'
-// leftSpanTax.innerText = 'Tax'
-//
-// let rightSpanTax = document.createElement('span')
-// rightSpanTax.className = 'orderbox-price'
-// rightSpanTax.innerText = tax
-//
-// let liTax = document.createElement('li')
-// liTax.className = 'subtotal-style'
-// liTax.appendChild(leftSpan)
-// liTax.appendChild(rightSpan)
-//
-// ulPrice.appendChild(liTax)
-
-
-
-
 
 
 // PART 3

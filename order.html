@@ -45,7 +45,7 @@
   </div>
 
   <div class="container flex-container">
-    <div class= "card-container">
+    <div class="card-container">
       <div class="card" style="width: 15rem;">
         <img class="card-img-top" src="/img/ribs.jpg" alt="Card image cap">
         <div class="card-body">
@@ -87,34 +87,44 @@
             <span class="orderbox-left-strong"><strong>Item</strong></span>
             <span class="orderbox-right-strong"><strong>Price</strong></span>
           </li>
-      <!--    <li class="list-group-item">
-            <span class="orderbox-left">Royal with Cheese</span>
-            <span class="orderbox-right">$8.99</span>
-          </li>
-          <li class="list-group-item">
-            <span class="orderbox-left">Arugual Pie</span>
-            <span class="orderbox-right">$9.99</span>
-          </li>
-          <li class="list-group-item">
-            <span class="orderbox-left">Arugual Pie</span>
-            <span class="orderbox-right">$9.99</span>
-          </li>
-          <li class="list-group-item subtotal order-price">
-            <span class="orderbox-price">Subtotal</span>
-            <span class="subtotal-price">$9.99</span>
-          </li>
-          <li class="list-group-item order-price">
-            <span class="orderbox-price">Tax</span>
-            <span class="">$2.99</span>
-          </li>
-          <li class="list-group-item order-price">
-            <span class="orderbox-price">Total</span>
-            <span class="">$15.99</span>
-          </li> -->
         </ul>
         <ul class="list-group list-group-flush price-list">
+          <li class="subtotal-style">
+            <span class="orderbox-price">Subtotal</span>
+            <span class="subtotal-price"></span>
+          </li>
+          <li class="subtotal-style">
+            <span class="orderbox-price">Tax</span>
+            <span class="tax-price"></span>
+          </li>
+          <li class="subtotal-style">
+            <span class="orderbox-price"><strong>Total</strong></span>
+            <strong><span class="price"></span></strong>
+          </li>
         </ul>
+      </div>
+
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Your Name</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First & Last Name">
         </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Phone Number</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="(444)444-4444">
+        </div>
+
+        <div class="form-check">
+          <label class="form-check-label">
+      <input type="checkbox" class="form-check-input">
+      Check me out
+    </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+
+
     </div>
   </div>
 
@@ -144,8 +154,8 @@
   </div>
 
   <script type="text/javascript">
-  buttonClickAdd();
-  total();
+    buttonClickAdd();
+    total();
   </script>
 
 </body>
