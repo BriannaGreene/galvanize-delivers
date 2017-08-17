@@ -71,46 +71,30 @@ function total() {
 
     let ulPrice = document.querySelector('.price-list')
     ulPrice.removeChild(ulPrice.firstChild)
-    console.log(ulPrice)
     ulPrice.appendChild(li)
+
 
   })
 }
 
+// let tax = subtotalDisplay * 0.09
+// let leftSpanTax = document.createElement('span')
+// leftSpanTax.className = 'orderbox-price'
+// leftSpanTax.innerText = 'Tax'
+//
+// let rightSpanTax = document.createElement('span')
+// rightSpanTax.className = 'orderbox-price'
+// rightSpanTax.innerText = tax
+//
+// let liTax = document.createElement('li')
+// liTax.className = 'subtotal-style'
+// liTax.appendChild(leftSpan)
+// liTax.appendChild(rightSpan)
+//
+// ulPrice.appendChild(liTax)
 
 
 
-// function total() {
-//   let ul = document.querySelector('.list-group')
-//   let liArray = ul.querySelectorAll('li.list-group-item > span.orderbox-right')
-//   let price = 0
-//   let sum = 0
-//   let subtotalDisplay = ''
-//
-//   for (var i = 0; i < liArray.length; i++) {
-//     let number = liArray[i].innerHTML
-//     let price = Number(number.replace(/\$/gi, ''))
-//     sum += price
-//     subtotalDisplay = `$${sum.toFixed(2)}`
-//   }
-//
-//   let leftSpan = document.createElement('span')
-//   leftSpan.className = 'orderbox-price'
-//   leftSpan.innerText = 'Subtotal'
-//
-//   let rightSpan = document.createElement('span')
-//   rightSpan.className = 'subtotal-price'
-//   rightSpan.innerHTML = subtotalDisplay
-//
-//   let li = document.createElement('li')
-//   li.appendChild(leftSpan)
-//   li.appendChild(rightSpan)
-//
-//   let ul = document.querySelector('.list-group')
-//   ul.appendChild(li)
-//   console.log(subtotalDisplay)
-//   console.log(ul)
-// }
 
 
 
