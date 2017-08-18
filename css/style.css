@@ -163,6 +163,11 @@ button:active, button:focus {
   margin: 10px;
 }
 
+.form {
+  width: 60%;
+  padding-left: 20px;
+}
+
 .footer {
   height: 150px;
   background-color: #ed3d6f;
