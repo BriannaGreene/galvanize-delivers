@@ -6,17 +6,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
     <script
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.js"></script>
-
-
-
-
   </head>
   <body>
 
@@ -24,10 +19,9 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="col-10">
-          <a class="navbar-brand" href="index.html">Navbar</a>
+          <a class="navbar-brand" href="index.html">G-Deliveries</a>
         </div>
         <div class="col-2">
           <ul class="navbar-nav mr-auto">
@@ -43,7 +37,7 @@
     </nav>
 
     <div id="order-page-content" class="container-fluid row justify-content-center">
-      <div class="container row align-items-center">
+      <div class="container row align-items-start">
         <div class="col-lg-7 justify-content-center">
           <div class="row justify-content-center text-center">
             <h1>Menu</h1>
@@ -56,7 +50,7 @@
                   <img class="card-img-top" src="/img/ribs.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h4 class="card-title">Smoked Ribs</h4>
-                    <p class="card-text">$14.99</p>
+                    <p class="price">$14.99</p>
                     <a href="#" class="btn btn-primary">ADD TO ORDER</a>
                   </div>
                 </div>
@@ -64,10 +58,10 @@
 
               <div class="col-12">
                 <div class="card" style="width: 15rem;">
-                  <img class="card-img-top" src="/img/pizza.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="/img/burger.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h4 class="card-title">Arugula Pizza</h4>
-                    <p class="card-text">$11.99</p>
+                    <h4 class="card-title">Royal with Cheese</h4>
+                    <p class="price">$8.99</p>
                     <a href="#" class="btn btn-primary">ADD TO ORDER</a>
                   </div>
                 </div>
@@ -77,10 +71,10 @@
             <div class="col-sm-6">
               <div class="col-12">
                 <div class="card" style="width: 15rem;">
-                  <img class="card-img-top" src="/img/ribs.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="/img/ice_cream.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h4 class="card-title">Smoked Ribs</h4>
-                    <p class="card-text">$14.99</p>
+                    <h4 class="card-title">Ice Cream Biscuit</h4>
+                    <p class="price">$7.99</p>
                     <a href="#" class="btn btn-primary">ADD TO ORDER</a>
                   </div>
                 </div>
@@ -90,13 +84,12 @@
                   <img class="card-img-top" src="/img/pizza.jpg" alt="Card image cap">
                   <div class="card-body">
                     <h4 class="card-title">Arugula Pizza</h4>
-                    <p class="card-text">$11.99</p>
+                    <p class="price">$11.99</p>
                     <a href="#" class="btn btn-primary">ADD TO ORDER</a>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -104,70 +97,73 @@
           <div class="row justify-content-center text-center">
             <h1>Cart</h1>
           </div>
+          <table class="table table-striped" id="orders">
+            <thead>
+              <tr>
+                <td>Name</td>
+                <td>Quantity</td>
+                <td>Price</td>
+                <td></td>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+              <tr>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Sub Total:</td>
+                <td></td>
+                <td><div id="subtotal"></div></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Tax:</td>
+                <td></td>
+                <td><div id="tax"></div></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Total:</td>
+                <td></td>
+                <td><div id="total"></div></td>
+              </tr>
+            </tfoot>
+          </table>
 
-      <table class="table table-striped" id="orders">
-        <thead>
-          <tr>
-            <td>Name</td>
-            <td>Quantity</td>
-            <td>Price</td>
-            <td></td>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td>Sub Total:<div id="subtotal"></div></td>
-            <td></td>
-          </tr>
-        </tfoot>
-      </table>
-
-
-
-  </div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
+          <form class="form">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Your Name</label>
+              <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First & Last Name">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Phone Number</label>
+              <input type="number" class="form-control" id="exampleInputPassword1" placeholder="(444)444-4444">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Address</label>
+              <input type="address" class="form-control" id="exampleInputPassword1" placeholder="">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
       </div>
-
     </div>
-
-
-
 
     <div class="container-fuild footer row justify-content-center">
       <div class="container navbar-light row align-items-center">
         <div class="col-lg-11">
-          <a class="navbar-brand" href="#">Fixed bottom</a>
+          <a class="navbar-brand" href="index.html">G-Deliveries</a>
           <p>Fresh & Hot Delivered</p>
         </div>
         <div class="col-lg-1">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="order.html">Order</a>
             </li>
           </ul>
         </div>
