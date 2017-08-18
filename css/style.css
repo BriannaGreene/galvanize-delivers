@@ -1,8 +1,27 @@
+html {
+  width: auto;
+}
+
+/* NAV STYLE - add background color on scroll */
+.mainnav {
+  background-color: #ffd500;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+/* HERO STYLE - colors, fonts, position */
+.carousel-caption {
+  padding-bottom: 150px;
+}
+
 .carousel-title {
   background: rgba(60, 65, 65, 0.8);
-  padding: 20px;
+  padding: 15px;
   margin-bottom: 20px;
   display: inline-block;
+  color: #ffd500;
 }
 
 .hero-button-div {
@@ -10,17 +29,19 @@
 }
 
 .carousel-button {
-  background-image: linear-gradient(to bottom, #ed3d6f, #bf1f7c);
+  background-color: #ffd500;
+  /*background-image: linear-gradient(to bottom, #ffb700, #ffd500);*/
   border: none;
   height: 50px;
   width: 175px;
-  color: white;
+  color: #383838;
   display: block;
   margin: auto;
 }
 
 .carousel-button:hover {
-  background-image: linear-gradient(to bottom, #bf1f7c, #ed3d6f);
+  background-color: #ffb700;
+  /*background-image: linear-gradient(to bottom, #ffd500, #ffb700);*/
 }
 
 .button-link:hover {
@@ -31,30 +52,22 @@ button:active, button:focus {
   outline: none !important;
 }
 
-#carouselExampleSlidesOnly {
-  padding-top: 50px;
-}
-
-.carousel-caption {
+/*CALL OUT GRID - font awesome style, colors*/
+#main-call-outs {
+  padding-top: 75px;
   padding-bottom: 100px;
-}
-
-.col-md-4 {
-  text-align: center;
-  color: #ed3d6f;
-  padding-top: 30px;
-}
-
-.col-md-4 h3:hover {
-  color: #bf1f7c;
+  background-color: #383838;
+  color: white;
+  margin: 0px;
 }
 
 .fa-div {
   height: 70px;
   width: 70px;
-  background-image: linear-gradient(to bottom, #ed3d6f, #bf1f7c);
+  background-color: #ffd500;
+  /*background-image: linear-gradient(to bottom, #ffb700, #ffd500);*/
   border-radius: 50%;
-  color: #fff;
+  color: #383838;
   display: inline-block;
   margin-bottom: 20px;
   font-size: 40px;
@@ -63,173 +76,23 @@ button:active, button:focus {
 
 .fa-div:hover {
   font-size: 100px;
-  background-image: linear-gradient(to bottom, #bf1f7c, #ed3d6f);
+  background-color: #ffb700;
+  /*background-image: linear-gradient(to bottom, #ffd500, #ffb700);*/
   font-size: 40px;
 }
 
-.flex-container {
-  flex-direction: row;
-  display: flex;
-  justify-content: center;
-}
-
-.card-container {
-  flex-wrap: wrap;
-  display: inline-flex;
-  justify-content: center;
-  max-width: 600px;
-}
-
-.order-header-container {
-  padding: 100px 60px 10px 60px;
-}
-
-.menu-title {
-  width: 65%;
-  display: inline-flex;
+.text-center {
   text-align: center;
 }
 
-.order-title {
-  width: 30%;
-  display: inline-flex;
-}
-
-.order-container {
-  display: inline-flex;
-  flex-wrap: wrap;
-  padding-left: 50px;
-}
-
-.orderbox-left {
-  width: 60%;
-  display: inline-flex;
-}
-
-.orderbox-right {
-  width: 35%;
-  display: inline-flex;
-  justify-content: flex-end;
-}
-
-.price-list {
-  list-style: none;
-}
-
-.subtotal-price {
-  width: 35%;
-  display: inline-flex;
-  justify-content: flex-end;
-}
-
-.tax-price {
-  width: 35%;
-  display: inline-flex;
-  justify-content: flex-end;
-}
-
-.price {
-  width: 35%;
-  display: inline-flex;
-  justify-content: flex-end;
-}
-
-.orderbox-left-strong {
-  width: 55%;
-  display: inline-flex;
-}
-
-.orderbox-right-strong {
-  width: 35%;
-  display: inline-flex;
-  justify-content: flex-end;
-}
-
-.subtotal-style {
-  padding: 17px;
-}
-
-.order-price :not(.subtotal) {
-  border: none;
-}
-
-.orderbox-price {
-  width: 60%;
-  display: inline-flex;
-  padding-left: 100px;
-}
-
-.card {
-  margin: 10px;
-}
-
-.form {
-  width: 60%;
-  padding-left: 20px;
-}
-
+/* FOOTER - color, height */
 .footer {
+  background-color: #ffd500;
   height: 150px;
-  background-color: #ed3d6f;
-  width: 100%;
-  margin-top: 75px;
-  padding-top: 40px;
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  color: white;
-}
-
-.footer-left {
-  flex-grow: 1;
-}
-
-.footer-right {
-  padding-top: 10px;
-}
-
-.footer-homelink {
-  color: #fff;
-}
-
-.footer-homelink:hover {
-  color: #e0e0e0;
-  text-decoration: none;
-}
-
-.footer-ul {
-  list-style: none;
-  text-align: right;
-}
-
-.footer-link {
-  color: #fff;
-}
-
-.footer-link:hover {
-  color: #e0e0e0;
-  text-decoration: none;
 }
 
 .subfooter {
+  background-color: #383838;
+  color: #878787;
   height: 50px;
-  background-color: #bf1f7c;
-  width: 100%;
-}
-
-.copy-text {
-  color: #c2c2c2;
-  padding-top: 10px;
-}
-
-.btn-primary {
-  background-image: linear-gradient(to bottom, #ed3d6f, #bf1f7c);
-  border-color: #bf1f7c;
-}
-
-.btn-primary:hover {
-  background-image: linear-gradient(to bottom, #bf1f7c, #ed3d6f);
-  border-color: #bf1f7c;
 }

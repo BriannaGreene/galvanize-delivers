@@ -1,44 +1,87 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title>G-Deliveries</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script> -->
 
-<head>
-  <meta charset="utf-8">
-  <title>Galvanize Delivers</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- <script type="text/javascript">
+  $(document).ready(function() {
 
-</head>
+    $(window).scroll(function () {
+      console.log($(window).scrollTop());
 
-<body id="bootstrap-overrides">
+      if ($(window).scrollTop() > 150) {
+        $('#topnav').addClass('mainnav');
+      }
+      if ($(window).scrollTop() < 151) {
+        $('#topnav').removeClass('mainnav');
+      }
+    });
 
-  <header>
-    <nav class="navbar fixed-top navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html"><h1>G Deliveries</h1></a>
-      <div class="navbar-nav" id="navbarText">
+    // $('.carousel').carousel()
+
+
+  });
+
+
+  </script> -->
+
+
+
+  </head>
+  <body>
+
+  <!-- align right nav items to right, expand nav size on mobile, drop down hamburger working,
+  - carousel still not working
+  - CHANGE ALL fonts to be "edgy"
+  - why are widths not the same... max... wtf
+-->
+
+
+
+    <nav id="topnav" class="navbar fixed-top navbar-expand-lg navbar-light">
+      <a class="navbar-brand col-10" href="index.html">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse col-2" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="order.html">Order Delivery<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="order.html">Order</a>
           </li>
         </ul>
       </div>
     </nav>
-  </header>
 
 
-  <!-- us JS to cycle through slides -->
+
+
+
+
+
+
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="2000">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="/img/hero-sandwich.jpg" alt="First slide">
+        <img class="d-block w-100" src="hero-sandwich.jpg" alt="First slide">
         <div class="carousel-caption d-none d-md-block">
-          <h1 class="carousel-title">Fresh &amp; Hot Delivery</h1>
+          <h1 class="carousel-title">FRESH  &amp;  HOT DELIVERED</h1>
           <a class="button-link" href="order.html"><button class="carousel-button" type="button" name="button">PLACE AN ORDER</button></a>
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="/img/hero-salad.jpg" alt="Second slide">
+        <img class="d-block w-100" src="hero-salad.jpg" alt="Second slide">
         <div class="carousel-caption d-none d-md-block">
           <div class="">
             <h1 class="carousel-title">Fresh &amp; Hot, Delivered</h1>
@@ -48,66 +91,70 @@
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="/img/hero-pizza.jpg" alt="Third slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="carousel-title">Fresh &amp; Hot, Delivered</h1>
-          <button class="carousel-button" type="button" name="button">PLACE AN ORDER</button>
-        </div>
-      </div>
     </div>
   </div>
 
-  <div class="container align-items-center">
-    <div class="row align-items-center">
-      <div class="col-md-4 align-self-center">
-        <a href="order.html"><div class="fa-div align-self-center">
-          <i class="fa fa-shopping-basket"></i>
-        </div></a>
+
+  <div id="main-call-outs" class="container-fluid row justify-content-center text-center">
+
+
+    <div class="container row align-items-center">
+      <div class="col-lg-4">
+        <a href="order.html">
+          <div class="fa-div align-self-center">
+            <i class="fa fa-shopping-basket"></i>
+          </div>
+        </a>
         <h3>SHOP ONLINE</h3>
-        <p>Using our convenient web app, you'll get all the power of gFood without having to call your order in. Order in your pajamas, order 24 hours a day, order on Christmas, we're here to serve you.</p>
+        <p>Using our convenient web app, you'll get all the power of gFood without having to call your order in. Order in your pajamas, order 24 hours a day, order on Christmas, we're here to serve you.
+        </p>
       </div>
-      <div class="col-md-4 align-self-center">
-        <a href="order.html"><div class="fa-div align-self-center">
-          <i class="fa fa-car" aria-hidden="true"></i>
-        </div></a>
+      <div class="col-lg-4">
+        <a href="order.html">
+          <div class="fa-div align-self-center">
+            <i class="fa fa-car" aria-hidden="true"></i>
+          </div>
+        </a>
         <h3>FAST DELIVERY</h3>
-        <p>You've never seen ordering this quick. Our proprietary ordering rocket ship delivery team allows you to spend less time being hungry, and more time doing what matters most to you.</p>
+        <p>You've never seen ordering this quick. Our proprietary ordering rocket ship delivery team allows you to spend less time being hungry, and more time doing what matters most to you.
+        </p>
       </div>
-      <div class="col-md-4">
-        <a href="order.html"><div class="fa-div align-self-center">
-          <i class="fa fa-usd" aria-hidden="true"></i>
-        </div></a>
+      <div class="col-lg-4">
+        <a href="order.html">
+          <div class="fa-div align-self-center">
+            <i class="fa fa-usd" aria-hidden="true"></i>
+          </div>
+        </a>
         <h3>GREAT DEALS</h3>
-        <p>Money: You've got it, we want it. But let it never be said we're not incredibly fair! Burger sales? Check. Pizza sales? Check. Burger and pizza sales?? Check, check, check! We seriously can't stop making deals.</p>
+        <p>Money: You've got it, we want it. But let it never be said we're not incredibly fair! Burger sales? Check. Pizza sales? Check. Burger and pizza sales?? Check, check, check! We seriously can't stop making deals.
+        </p>
       </div>
     </div>
+
+
   </div>
 
-
-
-
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-left">
-        <a class="footer-homelink" href="index.html"><h2>G Deliveries</h2></a>
-        <p>Fresh &amp; Hot Delivery</p>
+  <div class="container-fuild footer row justify-content-center">
+    <div class="container navbar-light row align-items-center">
+      <div class="col-lg-11">
+        <a class="navbar-brand" href="#">Fixed bottom</a>
+        <p>Fresh & Hot Delivered</p>
       </div>
-      <div class="footer-right">
-        <ul class="footer-ul">
-          <li class="">
-            <a class="footer-link" href="index.html">Home</a>
+      <div class="col-lg-1">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="">
-            <a class="footer-link" href="order.html">Order Delivery</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
           </li>
         </ul>
       </div>
     </div>
-  </footer>
+  </div>
 
-  <div class="subfooter">
-    <div class="container copy-text">
+  <div class="container-fuild subfooter row justify-content-center">
+    <div class="container row align-items-center">
       <small class="">&copy 2017 G Deliveries</small>
     </div>
   </div>
@@ -115,6 +162,10 @@
 
 
 
-</body>
 
+
+
+
+
+  </body>
 </html>
