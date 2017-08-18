@@ -1,7 +1,3 @@
-html {
-  width: auto;
-}
-
 /* NAV STYLE - add background color on scroll */
 .mainnav {
   background-color: #ffd500;
@@ -61,6 +57,12 @@ button:active, button:focus {
   margin: 0px;
 }
 
+#order-page-content {
+  padding-top: 75px;
+  padding-bottom: 100px;
+  margin: 0px;
+}
+
 .fa-div {
   height: 70px;
   width: 70px;
@@ -83,6 +85,24 @@ button:active, button:focus {
 
 .text-center {
   text-align: center;
+}
+
+.card {
+  margin: 10px;
+}
+
+.btn {
+  background-color: #ffd500;
+  color: #383838;
+  border-radius: 0px;
+  border: #ffd500;
+}
+
+.btn:hover {
+  background-color: #ffb700;
+  color: #383838;
+  border-radius: 0px;
+  border: #ffb700;
 }
 
 /* FOOTER - color, height */
